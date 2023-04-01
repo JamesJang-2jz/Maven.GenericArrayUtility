@@ -16,10 +16,8 @@ public class CountDuplicatesInMergeTest {
         Integer[] inputArray = {1, 2, valueToEvaluate, 8, 4, 5, valueToEvaluate, 0, 9, 8, valueToEvaluate};
         Integer[] arrayToMerge = {1, 2, valueToEvaluate, 8, 4, 5, valueToEvaluate, 0, 9, 8};
         ArrayUtility<Integer> arrayUtility = new ArrayUtility<Integer>(inputArray);
-
         // When
         Integer actual = arrayUtility.countDuplicatesInMerge(arrayToMerge, valueToEvaluate);
-
         // Then
         Assert.assertEquals(expected, actual);
     }
